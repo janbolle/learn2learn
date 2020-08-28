@@ -132,7 +132,7 @@ def main(
 
     def make_env():
         env = gym.make(env_name)
-        env = ch.envs.ActionSpaceScaler(env)
+     #  env = ch.envs.ActionSpaceScaler(env)
         return env
 
     env = l2l.gym.AsyncVectorEnv([make_env for _ in range(num_workers)])
